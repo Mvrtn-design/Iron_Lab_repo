@@ -1,12 +1,12 @@
 package com.example;
 
-import java.util.Scanner;
+import java.time.LocalDate;
+
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Introduce your  name: ");
-        String name = scan.nextLine();
-        System.out.println("Hello, " + name);
+        LocalDate hoy = LocalDate.now();
+        System.out.println("This is the current date: " + hoy + ".\nStay well!");
     }
 }
